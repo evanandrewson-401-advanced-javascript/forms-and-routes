@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Character renders a Character 1`] = `
+<button
+  onClick={[Function]}
+  value="5cf5679a915ecad153ab6a45"
+>
+  <img
+    src="https://vignette.wikia.nocookie.net/avatar/images/c/cc/Sokka.png/revision/latest?cb=20140905085428"
+  />
+  <h1>
+    Sokka
+  </h1>
+</button>
+`;

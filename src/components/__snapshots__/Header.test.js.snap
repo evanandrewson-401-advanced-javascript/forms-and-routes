@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component renders a header 1`] = `
+<header>
+  <h1>
+    Avatar characters
+  </h1>
+  <nav>
+    <Link
+      to="/"
+    >
+      Home
+    </Link>
+    <Link
+      to="/list"
+    >
+      List of Characters
+    </Link>
+  </nav>
+</header>
+`;

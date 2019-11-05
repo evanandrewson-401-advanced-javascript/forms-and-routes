@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListOfCharacters component renders a list of characters 1`] = `
+<ul>
+  <li
+    key="5cf5679a915ecad153ab6a45"
+  >
+    <Character
+      __v={0}
+      _id="5cf5679a915ecad153ab6a45"
+      affiliation=" Bendless Boomerang Club[7] Southern Water Tribe Team Avatar United Republic Council"
+      allies={
+        Array [
+          "Hakoda",
+        ]
+      }
+      enemies={
+        Array [
+          "Ozai",
+        ]
+      }
+      eye="Blue"
+      first=""
+      gender="Male"
+      hair="Dark brown "
+      love=" Kaya (love interest; formerly) Suki (girlfriend) Yue (girlfriend; deceased; reincarnated as the moon spirit)"
+      name="Sokka"
+      photoUrl="https://vignette.wikia.nocookie.net/avatar/images/c/cc/Sokka.png/revision/latest?cb=20140905085428"
+      position=" Chief of Southern Water Tribe (formerly) Map reader Son of Head Chieftain Hakoda Southern Water Tribe representative and Chairman of the United Republic Council (formerly)"
+      profession=" Politician Tactician Warrior"
+      skin="Brown"
+      toDetailPage={[Function]}
+      weapon="Sokka's weapons"
+    />
+  </li>
+</ul>
+`;
