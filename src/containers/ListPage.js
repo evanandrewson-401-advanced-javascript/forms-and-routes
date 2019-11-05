@@ -66,10 +66,15 @@ class ListPage extends Component {
     
   }
 
+  toDetailPage = (e) => {
+    e.preventDefault();
+    this.props.history.push(`/detail/${e.currentTarget.value}`);
+  }
+
   render() {
     return (
       <>
-        <ListOfCharacters items={this.state.characters} />
+        <ListOfCharacters items={this.state.characters} toDetailPage={this.toDetailPage} />
         <button disabled={this.state.searchInput ? true : false} onClick={this.incrementPage}>Page up</button>
         <button disabled={this.state.searchInput ? true : false || this.state.page < 2} onClick={this.decrementPage}>Page down</button>
         <button disabled={!this.state.searchInput ? true : false} onClick={this.clearSearchInput}>All Characters</button>

@@ -30,10 +30,15 @@ class HomePage extends Component {
     this.props.history.push(`/list/?name=${this.state.searchInput}`);
   }
 
+  toDetailPage = (e) => {
+    e.preventDefault();
+    this.props.history.push(`/detail/${e.currentTarget.value}`);
+  }
+
   render() {
     return (
       <>
-        <ListOfCharacters items={this.state.characters} />
+        <ListOfCharacters items={this.state.characters} toDetailPage={this.toDetailPage} />
         <button onClick={this.getNewChar}>Get New Character</button>
         <form onSubmit={this.handleSearch}>
           <input type="text" value={this.state.searchInput} onChange={this.handleChange}></input>

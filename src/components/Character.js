@@ -1,16 +1,18 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Character = ({ name, photoUrl }) => {
+const Character = ({ _id, name, photoUrl, toDetailPage }) => {
   return (
-    <div>
+    <button value={_id} onClick={toDetailPage}>
       <img src={photoUrl} />
       <h1>{name}</h1>
-    </div>
+    </button>
   );
 };
 
 Character.propTypes = {
+  toDetailPage: PropTypes.func.isRequired,
+  _id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   photoUrl: PropTypes.string.isRequired
 };
