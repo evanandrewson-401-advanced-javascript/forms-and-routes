@@ -5,7 +5,7 @@ const Footer = () => {
     <footer>
       <p>&copy; Evan inc.</p>
     </footer>
-  )
-}
+  );
+};
 
 export default Footer;
